@@ -29,13 +29,13 @@ body {
     max-width: 117rem;
     margin: auto;
     padding: 0;
-    
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .header-menu {
-    text-align: left; 
-}
+        text-align: left;
+        height: 7rem;
+    }
 }
 
 .header-menu li {
@@ -47,7 +47,7 @@ body {
     background: #98a3a3;
     font-size: 1.4rem;
     text-decoration: none;
-    padding: 0.9rem 1.1rem;
+    padding: 0.8rem 1.1rem;
     color: #fff;
     display: block;
     box-shadow: 0 0.3rem 0 #7f8c8c;
@@ -72,48 +72,52 @@ body {
 [class^="article-cont-"] {
     max-width: 117rem;
     margin: auto;
-    padding: 3.7rem 1.5rem 0 1.5rem ;
+    padding: 3.7rem 1.5rem 0 1.5rem;
 }
 
 @media (min-width: 640px) {
     [class^="article-cont-"] {
-    max-width: 117rem;
-    margin: auto;
-    padding-bottom: 3.7rem;
-}
+        max-width: 117rem;
+        margin: auto;
+        padding-bottom: 0.3rem;
+    }
 }
 
 .article-img {
     width: 100%;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .article-img {
-    float: left;
-    width: 49%;
-    border-radius: 0.4rem;
-}
+        float: left;
+        width: 49%;
+        border-radius: 0.4rem;
+        margin-top: 0;
+    }
 }
 
 .arcticle-description {
     width: 100%;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .arcticle-description {
-    float: right;
-    width: 49%;
-}
+        float: right;
+        width: 49%;
+        margin-top: 0;
+    }
 }
 
 .arcticle-headline {
     font-size: 2rem;
     color: #7f8c8c;
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.3rem;
     font-weight: normal;
     padding-left: 0.3rem;
     line-height: 0.83;
+    margin-top: 0;
 }
 
 .arcticle-text {
@@ -125,8 +129,8 @@ body {
 
 @media (min-width: 640px) {
     .arcticle-text {
-    margin-bottom: 5rem;
-}        
+        margin-bottom: 5rem;
+    }
 }
 
 .article-link {
@@ -135,10 +139,11 @@ body {
     color: #7f8c8c;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .article-link {
-    float: left;
-}
+        float: left;
+        font-weight: normal;
+    }
 }
 
 .article-link:hover {
@@ -153,7 +158,7 @@ body {
     background: url(../img/link_img.jpg);
     background-size: cover;
     transform: translateY(1.3rem);
-    margin-right: 1.7rem;
+    margin-right: 2.1rem;
 }
 
 .article-link:hover:before {
@@ -185,11 +190,11 @@ body {
     text-align: center;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .article-details-button {
-    float: right;
-    margin-bottom: 0;
-}
+        float: right;
+        margin-bottom: 0;
+    }
 }
 
 .article-details-button:hover {
@@ -197,23 +202,27 @@ body {
     box-shadow: 0 0.4rem 0 #e2534b;
     cursor: pointer;
 }
-    
-.footer-menu li, .footer-menu-mobile li {
+
+.footer-menu li,
+.footer-menu-mobile li {
     list-style: none;
     display: inline-block;
 }
-  
-.footer-menu, .footer-menu-mobile {
-    display: block;
+
+.footer-menu {
+    display: none;
     max-width: 117rem;
     margin: auto;
     padding: 0;
-    text-align: center;
+    margin-left: 30.7%;
     list-style: none;
 }
 
 .footer-menu-mobile {
     margin-bottom: 3rem;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
 }
 
 .footer-button {
@@ -221,20 +230,20 @@ body {
 }
 
 .footer-button-mobile {
-        display: block;    
-        background: #98a3a3;
-        font-size: 1.4rem;
-        text-decoration: none;
-        height: 3.9rem;
-        width: 8rem;
-        color: #fff;
-        box-shadow: 0 0.3rem 0 #7f8c8c;
-        border-radius: 0.4rem;
-        line-height: 3;
-        margin: 0 1rem 0 1rem;
+    display: block;
+    background: #98a3a3;
+    font-size: 1.4rem;
+    text-decoration: none;
+    height: 3.9rem;
+    width: 8rem;
+    color: #fff;
+    box-shadow: 0 0.3rem 0 #7f8c8c;
+    border-radius: 0.4rem;
+    line-height: 3;
+    margin: 2rem 1rem 0 1rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
     .footer-button {
         display: block;
         background: #98a3a3;
@@ -245,16 +254,19 @@ body {
         color: #fff;
         box-shadow: 0 0.3rem 0 #7f8c8c;
         border-radius: 0.4rem;
-        margin: 4.2rem 2rem 3.7rem 0;
+        margin: 5.4rem 0.8rem 3.7rem 0;
         text-align: center;
         line-height: 3;
         list-style: none;
-}
+    }
+    .footer-menu {
+        display: block;
+    }
     .footer-button-mobile {
         display: none;
-    }    
+    }
 }
-    
+
 .active.footer-button {
     background: #62a29e;
     box-shadow: 0 0.3rem 0 #528b86;
@@ -276,8 +288,6 @@ body {
 }
 
 .footer-menu li:last-child {
-    margin-left: 2rem;
+    margin-left: 1.1rem;
     font-weight: 900;
 }
-
-
